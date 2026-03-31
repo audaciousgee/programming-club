@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+namespace IntSum { //Namespace to define function sum. Return type int
+int sum(int a, int b){
+return a + b;
+}
+}
+namespace LongSum { // function LongSum returns type long
+    long sum(long a, long b){
+        return a + b;
+    }
+}
+
+int main(){
+ int x = IntSum::sum (90, 17); //Call function Intsum and store result in variable
+ long y = LongSum::sum (450, 32); // Call function LongSum and store result in variable y
+
+ cout << "IntSum: "<< x << endl; //Display results of functions on the terminal
+ cout <<"LongSum: " << y << endl;
+
+ return 0;
+}
+ 
